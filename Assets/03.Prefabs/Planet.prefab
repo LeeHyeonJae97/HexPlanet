@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3122224807821812254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3122224807821812249}
+  - component: {fileID: 3122224807821812248}
+  m_Layer: 0
+  m_Name: Planet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3122224807821812249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3122224807821812254}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 9144751059770900385}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3122224807821812248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3122224807821812254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8238698505e955045a9b22fb454d91bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties:
+    resolution: 3
+    scale: 2
+    tileTag: PlanetTile
+    maxEdgeLength: 0
+    minEdgeLength: 0.001
+    maxTileRadius: 0
+    sphereRadius: 0
+    tilePrefab: {fileID: 6041898931960300574, guid: d3aed10df54e4084b9965ff07349f3c7,
+      type: 3}
+    tileHolder: {fileID: 9144751059770900385}
+    pointsOnSphere: []
+    triangleIndices: 
+    tiles: []
+  noiseSettings:
+    strength: 5
+    numLayers: 4
+    baseRoughness: 0.3
+    roughness: 2
+    persistence: 0.6
+    centre: {x: 1.04, y: 0.21, z: 0.58}
+    minValue: 0.9
+  tileTypes:
+  - extrusion: 0.88
+    material: {fileID: 2100000, guid: ffc9952815bcd5c4ab91d8dd536f5156, type: 2}
+  - extrusion: 0.92
+    material: {fileID: 2100000, guid: 3797cfa03ad5d0a46a2b7af543f2c486, type: 2}
+  - extrusion: 0.95
+    material: {fileID: 2100000, guid: 3797cfa03ad5d0a46a2b7af543f2c486, type: 2}
+  - extrusion: 0.98
+    material: {fileID: 2100000, guid: 3797cfa03ad5d0a46a2b7af543f2c486, type: 2}
+  - extrusion: 1
+    material: {fileID: 2100000, guid: 3797cfa03ad5d0a46a2b7af543f2c486, type: 2}
+--- !u!1 &5765835671450447393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9144751059770900385}
+  m_Layer: 0
+  m_Name: TileHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9144751059770900385
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5765835671450447393}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3122224807821812249}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
